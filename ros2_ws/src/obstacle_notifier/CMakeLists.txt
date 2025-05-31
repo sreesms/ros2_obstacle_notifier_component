@@ -22,12 +22,12 @@ ament_target_dependencies(obstacle_notifier_component
   sensor_msgs
 )
 
-# ✅ Register the component
+#  Register the component
 rclcpp_components_register_nodes(obstacle_notifier_component
   "obstacle_notifier::ObstacleNotifierComponent"
 )
 
-# ✅ Install the shared library
+#  Install the shared library
 install(TARGETS obstacle_notifier_component
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
@@ -39,5 +39,5 @@ install(DIRECTORY include/
   DESTINATION include
 )
 
-# ✅ Required to register the plugin file
+# Required to register the plugin file
 ament_package()
